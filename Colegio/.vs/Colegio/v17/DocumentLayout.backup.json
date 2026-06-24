@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\colegio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:colegio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\colegio.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:colegio.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Colegio.csproj",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Colegio.csproj",
+              "RelativeDocumentMoniker": "Colegio.csproj",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Colegio.csproj",
+              "RelativeToolTip": "Colegio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-24T17:49:30.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Colegio.http",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Colegio.http",
+              "RelativeDocumentMoniker": "Colegio.http",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Colegio.http",
+              "RelativeToolTip": "Colegio.http",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-06-24T17:46:40.848Z",
+              "EditorCaption": ""
             }
           ]
         }
