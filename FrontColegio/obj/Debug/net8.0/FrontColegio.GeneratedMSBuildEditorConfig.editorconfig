@@ -26,8 +26,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Alumnos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbHVtbm9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/CrearAlumno.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDcmVhckFsdW1uby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/EditarAlumno.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0YXJBbHVtbm8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Error.razor]
