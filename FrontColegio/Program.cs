@@ -13,6 +13,7 @@ builder.Services.AddScoped<AlumnoService>();
 builder.Services.AddScoped<ProfesorService>();
 builder.Services.AddScoped<MateriaService>();
 builder.Services.AddScoped<MateriaAlumnoService>();
+builder.Services.AddScoped<ReporteService>();
 
 
 

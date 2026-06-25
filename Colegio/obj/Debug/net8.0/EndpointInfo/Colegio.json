@@ -667,6 +667,44 @@
         }
       }
     },
+    "/api/Reportes/calificaciones": {
+      "get": {
+        "tags": [
+          "Reportes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ReporteCalificacionesDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ReporteCalificacionesDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ReporteCalificacionesDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -931,6 +969,48 @@
             "items": {
               "$ref": "#/components/schemas/Materia"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReporteCalificacionesDto": {
+        "type": "object",
+        "properties": {
+          "anioAcademico": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "identificacionAlumno": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreAlumno": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoMateria": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreMateria": {
+            "type": "string",
+            "nullable": true
+          },
+          "identificacionProfesor": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreProfesor": {
+            "type": "string",
+            "nullable": true
+          },
+          "calificacionFinal": {
+            "type": "number",
+            "format": "double"
+          },
+          "aprobo": {
+            "type": "string",
             "nullable": true
           }
         },
