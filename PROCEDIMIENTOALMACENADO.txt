@@ -1,0 +1,64 @@
+CREATE PROCEDURE dbo.MiProcedimientoAlmacenado
+    @xml_usuarios XML,
+    @xml_compras   XML,
+    @xml_itemsIva  XML
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+
+    DECLARE @Usuarios TABLE (
+        Id     INT,
+        Nombre VARCHAR(100)
+    );
+
+    INSERT INTO @Usuarios (Id, Nombre)
+    SELECT
+        T.c.value('Id[1]', 'INT'),
+        T.c.value('Nombre[1]', 'VARCHAR(100)')
+    FROM @xml_usuarios.nodes('/Data/Usuario') AS T(c);
+
+   
+    DECLARE @Compras TABLE (
+        Usuario  INT,
+        Producto INT,
+        Valor    DECIMAL(10,2)
+    );
+
+    INSERT INTO @Compras (Usuario, Producto, Valor)
+    SELECT
+        T.c.value('Usuario[1]', 'INT'),
+        T.c.value('Producto[1]', 'INT'),
+        T.c.value('Valor[1]', 'DECIMAL(10,2)')
+    FROM @xml_compras.nodes('/Data/Item') AS T(c);
+
+
+    DECLARE @ItemsIva TABLE (
+        IdProducto INT,
+        Porcentaje DECIMAL(10,4)   -- con 4 decimales para precisión
+    );
+
+    INSERT INTO @ItemsIva (IdProducto, Porcentaje)
+    SELECT
+        T.c.value('IdProducto[1]', 'INT'),
+        T.c.value('Porcentaje[1]', 'DECIMAL(10,4)')
+    FROM @xml_itemsIva.nodes('/Data/Producto') AS T(c);
+
+
+    SELECT
+        u.Id,
+        u.Nombre,
+        CAST(ISNULL(SUM(c.Valor), 0) AS DECIMAL(10,2)) AS [Valor Total],
+        CAST(ISNULL(
+            SUM(CASE
+                    WHEN i.IdProducto IS NOT NULL
+                    THEN c.Valor * i.Porcentaje
+                    ELSE 0
+                END), 0) AS DECIMAL(10,2)) AS Iva
+    FROM @Usuarios u
+    LEFT JOIN @Compras c ON u.Id = c.Usuario
+    LEFT JOIN @ItemsIva i ON c.Producto = i.IdProducto
+    GROUP BY u.Id, u.Nombre
+    ORDER BY u.Id;  
+END;
+GO
