@@ -1,0 +1,66 @@
+﻿@page "/materias"
+@using FrontColegio.Services
+@using FrontColegio.Models
+@using Microsoft.JSInterop
+@inject NavigationManager Navigation
+@inject AlumnoService AlumnoService
+@inject IJSRuntime JsRuntime
+@inject MateriaService MateriaService
+
+<h3>Materias</h3>
+
+<button class="btn btn-primary mb-3" @onclick=Crear>Agregar Materia</button>
+
+@if (materias == null)
+{
+    <p>Cargando...</p>
+}
+else if (!materias.Any())
+{
+    <p>No hay materias registradas.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Profesor</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var materia in materias)
+            {
+                <tr>
+                    <td>@materia.Codigo</td>
+                    <td>@materia.Nombre</td>
+                    <td>@materia.NombreProfesor</td>
+                    <td>
+                        <button class="btn btn-info btn-sm" @onclick="() => Editar(materia.Id)">Editar</button>
+                        <button class="btn btn-danger btn-sm" @onclick="() => Eliminar(materia.Id)">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<MateriaDto>? materias;
+
+    protected override async Task OnInitializedAsync()
+    {
+        materias = await MateriaService.GetMateriasAsync();
+    }
+
+
+    private void Editar(int id) => Navigation.NavigateTo($"/materias/editar/{id}");
+    private void Crear() => Navigation.NavigateTo("/Materias/crear");
+
+    private async Task Eliminar(int id)
+    {
+        // Confirmación y eliminación
+    }
+}

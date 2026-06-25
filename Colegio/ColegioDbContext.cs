@@ -17,14 +17,22 @@ namespace Colegio
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-        // Restricción: Un alumno no puede repetir materia el mismo año académico 
+            // Restricción: Un alumno no puede repetir materia el mismo año académico 
             modelBuilder.Entity<MateriaAlumno>()
                 .HasIndex(ma => new { ma.AnioAcademico, ma.AlumnoId, ma.MateriaId })
                 .IsUnique();
+            modelBuilder.Entity<Materia>()
+                .HasOne(m => m.Profesor)
+
+                .WithMany(p => p.Materias)
+
+                .HasForeignKey(m => m.ProfesorId)
+
+                .OnDelete(DeleteBehavior.Restrict);
 
             base.OnModelCreating(modelBuilder);
         }
 
-       
+
     }
 }

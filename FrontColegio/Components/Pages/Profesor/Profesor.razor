@@ -1,0 +1,119 @@
+﻿@page "/profesor"
+@using FrontColegio.Services
+@using FrontColegio.Models
+@using Microsoft.JSInterop
+@inject NavigationManager Navigation
+@inject ProfesorService profesorservice
+@inject IJSRuntime JsRuntime
+
+<h3>Lista de profesores</h3>
+
+<button class="btn btn-primary mb-3" @onclick="Nuevoprofesor">Agregar profesor</button>
+
+
+@if (profesor == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else if (!profesor.Any())
+{
+    <p>No hay profesor registrados.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Identificacion</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var profesor in profesor)
+            {
+                <tr>
+                    <td>@profesor.Identificacion</td>
+                    <td>@profesor.Nombre</td>
+                    <td>@profesor.Apellido</td>
+                    <td>@profesor.Edad</td>
+                    <td>@profesor.Direccion</td>
+                    <td>@profesor.Telefono</td>
+                    <td>
+                        <button class="btn btn-info btn-sm" @onclick="() => Editarprofesor(profesor.Id)">Editar</button>
+                        <button class="btn btn-danger btn-sm" @onclick="() => Eliminarprofesor(profesor.Id)">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (!string.IsNullOrEmpty(mensajeError))
+{
+    <div class="alert alert-danger">@mensajeError</div>
+}
+
+@code {
+    private List<ProfesorDto>? profesor;
+    private string? mensajeError;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Cargarprofesor();
+    }
+
+    private async Task Cargarprofesor()
+    {
+        try
+        {
+            profesor = await profesorservice.GetProfesorsAsync();
+            mensajeError = null;
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Error al cargar profesor: {ex.Message}";
+        }
+    }
+
+    private void Nuevoprofesor()
+    {
+        Console.WriteLine("Botón Agregar clickeado");
+        Navigation.NavigateTo("/profesor/crear");
+    }
+    private void Editarprofesor(int id)
+    {
+        Console.WriteLine($"Botón Editar clickeado para ID {id}");
+        Navigation.NavigateTo($"/profesor/editar/{id}");
+    }
+
+
+
+    private async Task Eliminarprofesor(int id)
+    {
+        var confirmado = await JsRuntime.InvokeAsync<bool>("confirm", "¿Está seguro de eliminar este profesor?");
+        if (confirmado)
+        {
+            try
+            {
+                var response = await profesorservice.DeleteProfesorAsync(id);
+                if (response.IsSuccessStatusCode)
+                {
+                    await Cargarprofesor();
+                }
+                else
+                {
+                    mensajeError = "Error al eliminar el profesor.";
+                }
+            }
+            catch (Exception ex)
+            {
+                mensajeError = $"Error: {ex.Message}";
+            }
+        }
+    }
+}

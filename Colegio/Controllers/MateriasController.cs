@@ -30,16 +30,26 @@ namespace Colegio.Controllers
 
         // GET: api/Materias/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Materia>> GetMateria(int id)
+        public async Task<ActionResult<MateriaResponseDto>> GetMateria(int id)
         {
-            var materia = await _context.Materias.FindAsync(id);
+            var materia = await _context.Materias
+                .Include(m => m.Profesor)
+                .Select(m => new MateriaResponseDto
+                {
+                    Id = m.Id,
+                    Codigo = m.Codigo,
+                    Nombre = m.Nombre,
+                    ProfesorId = m.ProfesorId,
+                    NombreProfesor = m.Profesor != null
+                        ? $"{m.Profesor.Nombre} {m.Profesor.Apellido}"
+                        : "Sin asignar"
+                })
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             if (materia == null)
-            {
                 return NotFound();
-            }
 
-            return materia;
+            return Ok(materia);
         }
 
         // PUT: api/Materias/5

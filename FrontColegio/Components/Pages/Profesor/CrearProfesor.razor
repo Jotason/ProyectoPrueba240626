@@ -1,0 +1,76 @@
+﻿@using FrontColegio.Services
+@using FrontColegio.Models
+@using Microsoft.AspNetCore.Components.Forms
+@page "/profesor/crear"
+@inject ProfesorService ProfesorService
+@inject NavigationManager Navigation
+
+<h3>Nuevo Profesor</h3>
+
+<EditForm Model="nuevoProfesor" OnValidSubmit="GuardarProfesor">
+    <!-- Cambiado aquí -->
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label for="identificacion" class="form-label">Identificacion</label>
+        <InputText id="identificacion" class="form-control" @bind-Value="nuevoProfesor.Identificacion" />
+    </div>
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <InputText id="nombre" class="form-control" @bind-Value="nuevoProfesor.Nombre" />
+    </div>
+    <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <InputText id="apellido" class="form-control" @bind-Value="nuevoProfesor.Apellido" />
+    </div>
+
+    <div class="mb-3">
+        <label for="edad" class="form-label">Edad</label>
+        <InputNumber id="edad" class="form-control" @bind-Value="nuevoProfesor.Edad" />
+    </div>
+    <div class="mb-3">
+        <label for="direccion" class="form-label">Direccion</label>
+        <InputText id="direccion" class="form-control" @bind-Value="nuevoProfesor.Direccion" />
+    </div>
+    <div class="mb-3">
+        <label for="telefono" class="form-label">Telefono</label>
+        <InputText id="telefono" class="form-control" @bind-Value="nuevoProfesor.Telefono" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <button type="button" class="btn btn-secondary" @onclick="Cancelar">Cancelar</button>
+</EditForm>
+
+@code {
+    private ProfesorDto nuevoProfesor = new();
+
+    // Método renombrado a GuardarProfesor (no "CrearProfesor")
+    private async Task GuardarProfesor()
+    {
+        try
+        {
+            var response = await ProfesorService.CreateProfesorAsync(nuevoProfesor);
+            if (response.IsSuccessStatusCode)
+            {
+                Navigation.NavigateTo("/profesor");
+            }
+            else
+            {
+                // Manejar error (por ejemplo, mostrar un mensaje)
+                // Puedes usar un campo para mostrar error en la UI
+            }
+        }
+        catch (Exception)
+        {
+            // Manejar excepción
+        }
+
+
+    }
+
+    private void Cancelar()
+    {
+        Navigation.NavigateTo("/profesor");
+    }
+}

@@ -1,0 +1,91 @@
+﻿@using FrontColegio.Services
+@using FrontColegio.Models
+@using Microsoft.AspNetCore.Components.Forms   👈 ESTA LÍNEA ES LA CLAVE
+@page "/profesor/editar/{id:int}"
+@inject ProfesorService ProfesorService
+@inject NavigationManager Navigation
+
+<h3>Editar Profesor</h3>
+
+@if (profesor == null)
+{
+<p><em>Cargando...</em></p>
+}
+else
+{
+    <EditForm Model="profesor" OnValidSubmit="ActualizarProfesor">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label for="identificacion" class="form-label">Identificacion</label>
+            <InputText id="identificacion" class="form-control" @bind-Value="profesor.Identificacion" />
+        </div>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <InputText id="nombre" class="form-control" @bind-Value="profesor.Nombre" />
+        </div>
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <InputText id="apellido" class="form-control" @bind-Value="profesor.Apellido" />
+        </div>
+        <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <InputNumber id="edad" class="form-control" @bind-Value="profesor.Edad" />
+        </div>
+
+        <div class="mb-3">
+            <label for="direccion" class="form-label">Direccion</label>
+            <InputText id="direccion" class="form-control" @bind-Value="profesor.Direccion" />
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono</label>
+            <InputText id="telefono" class="form-control" @bind-Value="profesor.Telefono" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Actualizar</button>
+        <button type="button" class="btn btn-secondary" @onclick="Cancelar">Cancelar</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private ProfesorDto? profesor;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            profesor = await ProfesorService.GetProfesorAsync(Id);
+            if (profesor == null)
+                Navigation.NavigateTo("/profesor");
+        }
+        catch
+        {
+            Navigation.NavigateTo("/profesor");
+        }
+    }
+
+    private async Task ActualizarProfesor()
+    {
+        try
+        {
+            var response = await ProfesorService.UpdateProfesorAsync(Id, profesor!);
+            if (response.IsSuccessStatusCode)
+                Navigation.NavigateTo("/profesor");
+        }
+        catch
+        {
+            // Manejar error (puedes mostrar un mensaje en la UI)
+        }
+    }
+
+
+    private void Cancelar()
+    {
+        Navigation.NavigateTo("/profesor");
+    }
+}

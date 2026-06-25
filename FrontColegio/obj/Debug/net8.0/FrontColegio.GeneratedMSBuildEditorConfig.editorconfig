@@ -26,20 +26,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Alumnos.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbHVtbm9zLnJhem9y
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Alumnos/Alumnos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbHVtbm9zXEFsdW1ub3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Alumnos/CrearAlumno.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbHVtbm9zXENyZWFyQWx1bW5vLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Alumnos/EditarAlumno.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbHVtbm9zXEVkaXRhckFsdW1uby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/CrearAlumno.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDcmVhckFsdW1uby5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/EditarAlumno.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0YXJBbHVtbm8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Error.razor]
@@ -48,6 +48,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Materias/CrearMateria.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYXRlcmlhc1xDcmVhck1hdGVyaWEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Materias/Materias.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYXRlcmlhc1xNYXRlcmlhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Profesor/CrearProfesor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9mZXNvclxDcmVhclByb2Zlc29yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Profesor/EditarProfesor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9mZXNvclxFZGl0YXJQcm9mZXNvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Profesor/Profesor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9mZXNvclxQcm9mZXNvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/janus/Documents/GitHub/ProyectoPrueba240626/FrontColegio/Components/Pages/Weather.razor]

@@ -279,7 +279,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Colegio.Models.Materia",
+        "Type": "Colegio.Models.MateriaResponseDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

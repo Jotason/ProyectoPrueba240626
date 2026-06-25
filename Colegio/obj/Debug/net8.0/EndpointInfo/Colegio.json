@@ -481,17 +481,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Materia"
+                  "$ref": "#/components/schemas/MateriaResponseDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Materia"
+                  "$ref": "#/components/schemas/MateriaResponseDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Materia"
+                  "$ref": "#/components/schemas/MateriaResponseDto"
                 }
               }
             }
@@ -898,6 +898,33 @@
             "minimum": 0,
             "type": "number",
             "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MateriaResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "profesorId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nombreProfesor": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
