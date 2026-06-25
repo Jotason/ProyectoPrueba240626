@@ -13,12 +13,29 @@
     <ValidationSummary />
 
     <div class="mb-3">
+        <label for="identificacion" class="form-label">Identificacion</label>
+        <InputText id="identificacion" class="form-control" @bind-Value="nuevoAlumno.Identificacion" />
+    </div>
+    <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
         <InputText id="nombre" class="form-control" @bind-Value="nuevoAlumno.Nombre" />
     </div>
     <div class="mb-3">
         <label for="apellido" class="form-label">Apellido</label>
         <InputText id="apellido" class="form-control" @bind-Value="nuevoAlumno.Apellido" />
+    </div>
+    
+    <div class="mb-3">
+        <label for="edad" class="form-label">Edad</label>
+        <InputNumber id="edad" class="form-control" @bind-Value="nuevoAlumno.Edad" />
+    </div>
+    <div class="mb-3">
+        <label for="direccion" class="form-label">Direccion</label>
+        <InputText id="direccion" class="form-control" @bind-Value="nuevoAlumno.Direccion" />
+    </div>
+    <div class="mb-3">
+        <label for="telefono" class="form-label">Telefono</label>
+        <InputText id="telefono" class="form-control" @bind-Value="nuevoAlumno.Telefono" />
     </div>
 
     <button type="submit" class="btn btn-success">Guardar</button>

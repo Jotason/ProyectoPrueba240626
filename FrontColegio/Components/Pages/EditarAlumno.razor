@@ -18,12 +18,30 @@ else
         <ValidationSummary />
 
         <div class="mb-3">
+            <label for="identificacion" class="form-label">Identificacion</label>
+            <InputText id="identificacion" class="form-control" @bind-Value="alumno.Identificacion" />
+        </div>
+        <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
             <InputText id="nombre" class="form-control" @bind-Value="alumno.Nombre" />
         </div>
         <div class="mb-3">
             <label for="apellido" class="form-label">Apellido</label>
             <InputText id="apellido" class="form-control" @bind-Value="alumno.Apellido" />
+        </div>
+        <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <InputNumber id="edad" class="form-control" @bind-Value="alumno.Edad" />
+        </div>
+
+        <div class="mb-3">
+            <label for="direccion" class="form-label">Direccion</label>
+            <InputText id="direccion" class="form-control" @bind-Value="alumno.Direccion" />
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono</label>
+            <InputText id="telefono" class="form-control" @bind-Value="alumno.Telefono" />
         </div>
 
         <button type="submit" class="btn btn-success">Actualizar</button>

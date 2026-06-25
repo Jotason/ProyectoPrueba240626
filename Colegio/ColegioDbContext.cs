@@ -11,7 +11,20 @@ namespace Colegio
         }
 
         public DbSet<Alumno> Alumnos { get; set; }
+        public DbSet<Profesor> Profesores => Set<Profesor>();
+        public DbSet<Materia> Materias => Set<Materia>();
+        public DbSet<MateriaAlumno> MateriasAlumnos => Set<MateriaAlumno>();
 
-        // Opcional: configuraciones adicionales con OnModelCreating
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+        // Restricción: Un alumno no puede repetir materia el mismo año académico 
+            modelBuilder.Entity<MateriaAlumno>()
+                .HasIndex(ma => new { ma.AnioAcademico, ma.AlumnoId, ma.MateriaId })
+                .IsUnique();
+
+            base.OnModelCreating(modelBuilder);
+        }
+
+       
     }
 }

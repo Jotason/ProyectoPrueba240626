@@ -24,9 +24,12 @@ else
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>Identificacion</th>
                 <th>Nombre</th>
                 <th>Apellido</th>
+                <th>Edad</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -34,9 +37,12 @@ else
             @foreach (var alumno in alumnos)
             {
                 <tr>
-                    <td>@alumno.Id</td>
+                    <td>@alumno.Identificacion</td>
                     <td>@alumno.Nombre</td>
                     <td>@alumno.Apellido</td>
+                    <td>@alumno.Edad</td>
+                    <td>@alumno.Direccion</td>
+                    <td>@alumno.Telefono</td>
                     <td>
                         <button class="btn btn-info btn-sm" @onclick="() => EditarAlumno(alumno.Id)">Editar</button>
                         <button class="btn btn-danger btn-sm" @onclick="() => EliminarAlumno(alumno.Id)">Eliminar</button>
@@ -86,10 +92,6 @@ else
     }
 
 
-    private void TestClick()
-    {
-        Console.WriteLine("¡Botón de prueba funcionando!");
-    }
 
     private async Task EliminarAlumno(int id)
     {
