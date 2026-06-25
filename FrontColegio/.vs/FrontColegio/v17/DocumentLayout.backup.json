@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\models\\alumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:models\\alumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\models\\alumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:models\\alumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\components\\pages\\reportecalificaciones.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -126,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -138,8 +138,7 @@
               "RelativeToolTip": "Components\\Pages\\ReporteCalificaciones.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-25T08:04:49.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T08:04:49.482Z"
             },
             {
               "$type": "Document",
@@ -151,8 +150,7 @@
               "RelativeToolTip": "Services\\ReporteService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T08:04:06.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T08:04:06.755Z"
             },
             {
               "$type": "Document",
@@ -164,8 +162,7 @@
               "RelativeToolTip": "Models\\ReporteCalificacionesDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T08:03:43.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T08:03:43.044Z"
             },
             {
               "$type": "Document",
@@ -213,25 +210,24 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T20:34:40.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T20:34:40.098Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Layout\\NavMenu.razor",
               "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADUAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-24T21:15:16.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AlumnoDto.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Models\\AlumnoDto.cs",
               "RelativeDocumentMoniker": "Models\\AlumnoDto.cs",
