@@ -23,9 +23,23 @@ namespace Colegio.Controllers
 
         // GET: api/Materias
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Materia>>> GetMaterias()
+        public async Task<ActionResult<IEnumerable<MateriaResponseDto>>> GetMaterias()
         {
-            return await _context.Materias.ToListAsync();
+            var materias = await _context.Materias
+                .Include(m => m.Profesor) // Incluye el profesor
+                .Select(m => new MateriaResponseDto
+                {
+                    Id = m.Id,
+                    Codigo = m.Codigo,
+                    Nombre = m.Nombre,
+                    ProfesorId = m.ProfesorId,
+                    NombreProfesor = m.Profesor != null
+                        ? $"{m.Profesor.Nombre} {m.Profesor.Apellido}"
+                        : "Sin asignar"
+                })
+                .ToListAsync();
+
+            return Ok(materias);
         }
 
         // GET: api/Materias/5

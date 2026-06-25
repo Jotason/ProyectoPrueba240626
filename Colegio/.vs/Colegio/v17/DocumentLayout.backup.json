@@ -94,8 +94,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MateriasController.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MateriasController.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriasController.cs",
+              "RelativeToolTip": "Controllers\\MateriasController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T03:04:06.354Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -106,8 +119,7 @@
               "RelativeToolTip": "Models\\MateriaResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T05:59:32.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T05:59:32.277Z"
             },
             {
               "$type": "Document",
@@ -119,8 +131,7 @@
               "RelativeToolTip": "WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T04:50:08.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T04:50:08.479Z"
             },
             {
               "$type": "Document",
@@ -132,8 +143,7 @@
               "RelativeToolTip": "Models\\Materia.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T02:56:17.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T02:56:17.618Z"
             },
             {
               "$type": "Document",
@@ -145,8 +155,7 @@
               "RelativeToolTip": "Models\\MateriaAlumno.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T02:55:47.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T02:55:47.13Z"
             },
             {
               "$type": "Document",
@@ -158,8 +167,7 @@
               "RelativeToolTip": "Controllers\\AlumnoesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T20:17:51.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T20:17:51.47Z"
             },
             {
               "$type": "Document",
@@ -171,8 +179,7 @@
               "RelativeToolTip": "Models\\Alumno.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T19:43:43.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T19:43:43.958Z"
             },
             {
               "$type": "Document",
@@ -184,8 +191,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T19:34:01.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T19:34:01.923Z"
             },
             {
               "$type": "Document",
@@ -197,21 +203,7 @@
               "RelativeToolTip": "Controllers\\ProfesorsController.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T03:04:48.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MateriasController.cs",
-              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MateriasController.cs",
-              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriasController.cs",
-              "RelativeToolTip": "Controllers\\MateriasController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T03:04:06.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T03:04:48.065Z"
             },
             {
               "$type": "Document",
@@ -223,8 +215,7 @@
               "RelativeToolTip": "Models\\Profesor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T02:52:45.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T02:52:45.302Z"
             },
             {
               "$type": "Document",
@@ -236,8 +227,7 @@
               "RelativeToolTip": "ColegioDbContext.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T19:44:39.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T19:44:39.648Z"
             },
             {
               "$type": "Document",
@@ -249,8 +239,7 @@
               "RelativeToolTip": "Views\\Alumnoes\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-25T04:51:30.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T04:51:30.068Z"
             },
             {
               "$type": "Document",
@@ -262,8 +251,7 @@
               "RelativeToolTip": "Views\\Alumnoes\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-25T04:51:44.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T04:51:44.432Z"
             },
             {
               "$type": "Document",
@@ -275,8 +263,7 @@
               "RelativeToolTip": "Views\\Alumnoes\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-25T04:51:55.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T04:51:55.408Z"
             },
             {
               "$type": "Document",
@@ -288,8 +275,7 @@
               "RelativeToolTip": "Views\\Alumnoes\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-25T04:51:57.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T04:51:57.273Z"
             },
             {
               "$type": "Document",

@@ -1,0 +1,123 @@
+﻿@page "/materias/editar/{id:int}"
+@using FrontColegio.Models
+@using FrontColegio.Services
+@using Microsoft.AspNetCore.Components.Forms
+@inject MateriaService MateriaService
+@inject ProfesorService ProfesorService
+@inject NavigationManager Navigation
+
+<h3>Editar Materia</h3>
+
+@if (materia == null && !cargando)
+{
+    <p class="text-danger">No se encontró la materia.</p>
+}
+else if (cargando)
+{
+    <p><em>Cargando datos...</em></p>
+}
+else
+{
+    <EditForm Model="materia" OnValidSubmit="ActualizarMateria">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label for="codigo" class="form-label">Código</label>
+            <InputText id="codigo" class="form-control" @bind-Value="materia!.Codigo" />
+        </div>
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <InputText id="nombre" class="form-control" @bind-Value="materia!.Nombre" />
+        </div>
+
+        <div class="mb-3">
+            <label for="profesor" class="form-label">Profesor</label>
+            <InputSelect id="profesor" class="form-select" @bind-Value="materia!.ProfesorId">
+                <option value="">Seleccione un profesor...</option>
+                @foreach (var profesor in profesores)
+                {
+                    <option value="@profesor.Id">@profesor.Nombre @profesor.Apellido</option>
+                }
+            </InputSelect>
+        </div>
+
+        <button type="submit" class="btn btn-success">Actualizar</button>
+        <button type="button" class="btn btn-secondary" @onclick="Cancelar">Cancelar</button>
+    </EditForm>
+}
+
+@if (!string.IsNullOrEmpty(mensajeError))
+{
+    <div class="alert alert-danger mt-3">@mensajeError</div>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private MateriaDto? materia;
+    private List<ProfesorDto> profesores = new();
+    private bool cargando = true;
+    private string? mensajeError;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarDatos();
+    }
+
+    private async Task CargarDatos()
+    {
+        try
+        {
+            cargando = true;
+            mensajeError = null;
+
+            // Cargar materia
+            materia = await MateriaService.GetMateriaAsync(Id);
+            if (materia == null)
+            {
+                mensajeError = "No se encontró la materia.";
+                return;
+            }
+
+            // Cargar lista de profesores para el dropdown
+            profesores = await ProfesorService.GetProfesorsAsync() ?? new List<ProfesorDto>();
+
+          
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Error al cargar los datos: {ex.Message}";
+        }
+        finally
+        {
+            cargando = false;
+        }
+    }
+
+    private async Task ActualizarMateria()
+    {
+        try
+        {
+            mensajeError = null;
+            var response = await MateriaService.UpdateMateriaAsync(Id, materia!);
+            if (response.IsSuccessStatusCode)
+            {
+                Navigation.NavigateTo("/materias");
+            }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                mensajeError = $"Error al actualizar: {response.StatusCode} - {errorContent}";
+            }
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Excepción: {ex.Message}";
+        }
+    }
+
+    private void Cancelar() => Navigation.NavigateTo("/materias");
+}

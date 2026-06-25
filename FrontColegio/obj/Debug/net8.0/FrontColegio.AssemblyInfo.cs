@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FrontColegio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34c759030c9668648f5507dd48811721822d6d33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49cb91e2ed293c492582b831313a787c9249cb27")]
 [assembly: System.Reflection.AssemblyProductAttribute("FrontColegio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FrontColegio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
