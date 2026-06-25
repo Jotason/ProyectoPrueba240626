@@ -15,5 +15,7 @@ namespace Colegio.Models
 
         public int? ProfesorId { get; set; }
         public Profesor? Profesor { get; set; }
+
+        public ICollection<MateriaAlumno> MateriaAlumnos { get; set; } = new List<MateriaAlumno>();
     }
 }

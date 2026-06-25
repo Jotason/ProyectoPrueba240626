@@ -88,15 +88,17 @@ namespace Colegio.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAlumno(int id)
         {
-            var alumno = await _context.Alumnos.FindAsync(id);
+            var alumno = await _context.Alumnos
+                .Include(a => a.MateriaAlumnos)
+                .FirstOrDefaultAsync(a => a.Id == id);
             if (alumno == null)
-            {
                 return NotFound();
-            }
+
+            if (alumno.MateriaAlumnos.Any())
+                return BadRequest("No se puede eliminar el alumno porque tiene materias asignadas.");
 
             _context.Alumnos.Remove(alumno);
             await _context.SaveChangesAsync();
-
             return NoContent();
         }
 

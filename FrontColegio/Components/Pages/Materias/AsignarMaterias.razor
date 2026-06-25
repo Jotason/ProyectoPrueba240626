@@ -1,0 +1,185 @@
+﻿@page "/asignar-materias"
+@using FrontColegio.Models
+@using FrontColegio.Services
+@inject AlumnoService AlumnoService
+@inject MateriaService MateriaService
+@inject MateriaAlumnoService AsignacionService
+@inject NavigationManager Navigation
+
+<h3>Asignar Materias a Alumnos</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-3">
+            <div class="card-header">Nueva Asignación</div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label>Alumno</label>
+                    <InputSelect @bind-Value="nuevaAsignacion.AlumnoId" class="form-select">
+                        <option value="">Seleccione...</option>
+                        @foreach (var alumno in alumnos)
+                        {
+                            <option value="@alumno.Id">@alumno.Nombre @alumno.Apellido</option>
+                        }
+                    </InputSelect>
+                </div>
+                <div class="mb-3">
+                    <label>Materia</label>
+                    <InputSelect @bind-Value="nuevaAsignacion.MateriaId" class="form-select">
+                        <option value="">Seleccione...</option>
+                        @foreach (var materia in materias)
+                        {
+                            <option value="@materia.Id">@materia.Nombre</option>
+                        }
+                    </InputSelect>
+                </div>
+                <div class="mb-3">
+                    <label>Año Académico</label>
+                    <InputNumber @bind-Value="nuevaAsignacion.AnioAcademico" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label>Calificación (0-5)</label>
+                    <InputNumber @bind-Value="nuevaAsignacion.Calificacion" class="form-control" step="0.1" min="0" max="5" />
+                </div>
+                <button class="btn btn-success" @onclick="GuardarAsignacion">Asignar</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">Asignaciones Existentes</div>
+            <div class="card-body">
+                @if (asignaciones == null)
+                {
+                    <p>Cargando...</p>
+                }
+                else if (!asignaciones.Any())
+                {
+                    <p>No hay asignaciones.</p>
+                }
+                else
+                {
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Alumno</th>
+                                <th>Materia</th>
+                                <th>Año</th>
+                                <th>Calif.</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in asignaciones)
+                            {
+                                <tr>
+                                    <td>@item.NombreAlumno</td>
+                                    <td>@item.NombreMateria</td>
+                                    <td>@item.AnioAcademico</td>
+                                    <td>@item.Calificacion</td>
+                                    <td>
+                                        <button class="btn btn-danger btn-sm" @onclick="() => EliminarAsignacion(item.Id)">Eliminar</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(mensajeError))
+{
+    <div class="alert alert-danger mt-3">@mensajeError</div>
+}
+
+@code {
+    private List<AlumnoDto> alumnos = new();
+    private List<MateriaDto> materias = new();
+    private List<MateriaAlumnoDto> asignaciones = new();
+
+    private MateriaAlumnoDto nuevaAsignacion = new();
+    private string? mensajeError;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarDatos();
+    }
+
+    private async Task CargarDatos()
+    {
+        try
+        {
+            alumnos = await AlumnoService.GetAlumnosAsync() ?? new();
+            materias = await MateriaService.GetMateriasAsync() ?? new();
+            await CargarAsignaciones();
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Error al cargar datos: {ex.Message}";
+        }
+    }
+
+    private async Task CargarAsignaciones()
+    {
+        try
+        {
+            asignaciones = await AsignacionService.GetAsignacionesAsync() ?? new();
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Error al cargar asignaciones: {ex.Message}";
+        }
+    }
+
+    private async Task GuardarAsignacion()
+    {
+        try
+        {
+            mensajeError = null;
+
+            // Validaciones simples en frontend
+            if (nuevaAsignacion.AlumnoId == 0) { mensajeError = "Seleccione un alumno."; return; }
+            if (nuevaAsignacion.MateriaId == 0) { mensajeError = "Seleccione una materia."; return; }
+            if (nuevaAsignacion.AnioAcademico < 2000 || nuevaAsignacion.AnioAcademico > 2100) { mensajeError = "Año inválido."; return; }
+            if (nuevaAsignacion.Calificacion < 0 || nuevaAsignacion.Calificacion > 5) { mensajeError = "Calificación debe estar entre 0 y 5."; return; }
+
+            var response = await AsignacionService.CreateAsignacionAsync(nuevaAsignacion);
+            if (response.IsSuccessStatusCode)
+            {
+                nuevaAsignacion = new MateriaAlumnoDto(); // limpiar
+                await CargarAsignaciones();
+            }
+            else
+            {
+                var error = await response.Content.ReadAsStringAsync();
+                mensajeError = $"Error: {response.StatusCode} - {error}";
+            }
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Excepción: {ex.Message}";
+        }
+    }
+
+    private async Task EliminarAsignacion(int id)
+    {
+        try
+        {
+            var response = await AsignacionService.DeleteAsignacionAsync(id);
+            if (response.IsSuccessStatusCode)
+                await CargarAsignaciones();
+            else
+            {
+                var error = await response.Content.ReadAsStringAsync();
+                mensajeError = $"Error al eliminar: {error}";
+            }
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Excepción: {ex.Message}";
+        }
+    }
+}

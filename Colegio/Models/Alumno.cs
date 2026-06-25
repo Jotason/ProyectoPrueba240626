@@ -14,9 +14,9 @@ namespace Colegio.Models
         public string Apellido { get; set; } = string.Empty; 
         public int Edad { get; set; } 
         public string Direccion { get; set; } = string.Empty; 
-        public string Telefono { get; set; } = string.Empty; 
+        public string Telefono { get; set; } = string.Empty;
 
-        
-        public ICollection<MateriaAlumno> MateriasAsignadas { get; set; } = new List<MateriaAlumno>();
+
+        public ICollection<MateriaAlumno> MateriaAlumnos { get; set; } = new List<MateriaAlumno>();
     }
 }

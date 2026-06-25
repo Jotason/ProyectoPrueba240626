@@ -190,10 +190,10 @@
         }
       }
     },
-    "/api/MateriaAlumnoes": {
+    "/api/MateriaAlumno": {
       "get": {
         "tags": [
-          "MateriaAlumnoes"
+          "MateriaAlumno"
         ],
         "responses": {
           "200": {
@@ -203,7 +203,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/MateriaAlumno"
+                    "$ref": "#/components/schemas/AlumnoMateriaDto"
                   }
                 }
               },
@@ -211,7 +211,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/MateriaAlumno"
+                    "$ref": "#/components/schemas/AlumnoMateriaDto"
                   }
                 }
               },
@@ -219,7 +219,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/MateriaAlumno"
+                    "$ref": "#/components/schemas/AlumnoMateriaDto"
                   }
                 }
               }
@@ -229,23 +229,23 @@
       },
       "post": {
         "tags": [
-          "MateriaAlumnoes"
+          "MateriaAlumno"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MateriaAlumno"
+                "$ref": "#/components/schemas/AlumnoMateriaDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/MateriaAlumno"
+                "$ref": "#/components/schemas/AlumnoMateriaDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/MateriaAlumno"
+                "$ref": "#/components/schemas/AlumnoMateriaDto"
               }
             }
           }
@@ -256,17 +256,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/MateriaAlumno"
+                  "$ref": "#/components/schemas/AlumnoMateriaDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MateriaAlumno"
+                  "$ref": "#/components/schemas/AlumnoMateriaDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MateriaAlumno"
+                  "$ref": "#/components/schemas/AlumnoMateriaDto"
                 }
               }
             }
@@ -274,88 +274,10 @@
         }
       }
     },
-    "/api/MateriaAlumnoes/{id}": {
-      "get": {
-        "tags": [
-          "MateriaAlumnoes"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MateriaAlumno"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MateriaAlumno"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MateriaAlumno"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "MateriaAlumnoes"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MateriaAlumno"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MateriaAlumno"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/MateriaAlumno"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
+    "/api/MateriaAlumno/{id}": {
       "delete": {
         "tags": [
-          "MateriaAlumnoes"
+          "MateriaAlumno"
         ],
         "parameters": [
           {
@@ -823,11 +745,45 @@
             "type": "string",
             "nullable": true
           },
-          "materiasAsignadas": {
+          "materiaAlumnos": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/MateriaAlumno"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AlumnoMateriaDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alumnoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "materiaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "anioAcademico": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "calificacion": {
+            "type": "number",
+            "format": "double"
+          },
+          "nombreAlumno": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreMateria": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -859,23 +815,24 @@
           },
           "profesor": {
             "$ref": "#/components/schemas/Profesor"
+          },
+          "materiaAlumnos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MateriaAlumno"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
       "MateriaAlumno": {
         "required": [
-          "alumnoId",
-          "anioAcademico",
-          "materiaId"
+          "anioAcademico"
         ],
         "type": "object",
         "properties": {
           "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "anioAcademico": {
             "type": "integer",
             "format": "int32"
           },
@@ -893,7 +850,11 @@
           "materia": {
             "$ref": "#/components/schemas/Materia"
           },
-          "calificacionFinal": {
+          "anioAcademico": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "calificacion": {
             "maximum": 5,
             "minimum": 0,
             "type": "number",

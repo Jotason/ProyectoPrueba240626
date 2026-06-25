@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\controllers\\materiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:controllers\\materiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\controllers\\materiaalumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:controllers\\materiaalumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\controllers\\alumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:controllers\\alumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\models\\alumnomateriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:models\\alumnomateriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\models\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:models\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\models\\materiaalumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:models\\materiaalumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Migrations\\20260625073505_AddAlumnoMateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260625073505_AddAlumnoMateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\colegiodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:colegiodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\controllers\\materiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:controllers\\materiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\models\\materiaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,24 +51,12 @@
       "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:models\\profesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\colegiodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:colegiodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\controllers\\profesorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:controllers\\profesorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\controllers\\alumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:controllers\\alumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\views\\alumnoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -55,16 +75,8 @@
       "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:views\\alumnoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\models\\materiaalumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:models\\materiaalumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\controllers\\materiaalumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|solutionrelative:controllers\\materiaalumnoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{852AC7CB-14EF-45C6-9352-7F455289A0CC}|Colegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\colegio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -94,96 +106,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlumnoMateriaDto.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\AlumnoMateriaDto.cs",
+              "RelativeDocumentMoniker": "Models\\AlumnoMateriaDto.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\AlumnoMateriaDto.cs",
+              "RelativeToolTip": "Models\\AlumnoMateriaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:43:37.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MateriaDto.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\MateriaDto.cs",
+              "RelativeDocumentMoniker": "Models\\MateriaDto.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\MateriaDto.cs",
+              "RelativeToolTip": "Models\\MateriaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:43:09.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MateriaAlumnoesController.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriaAlumnoesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MateriaAlumnoesController.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriaAlumnoesController.cs",
+              "RelativeToolTip": "Controllers\\MateriaAlumnoesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:38:48.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260625073505_AddAlumnoMateria.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Migrations\\20260625073505_AddAlumnoMateria.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260625073505_AddAlumnoMateria.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Migrations\\20260625073505_AddAlumnoMateria.cs",
+              "RelativeToolTip": "Migrations\\20260625073505_AddAlumnoMateria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:35:06.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MateriasController.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriasController.cs",
               "RelativeDocumentMoniker": "Controllers\\MateriasController.cs",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriasController.cs",
               "RelativeToolTip": "Controllers\\MateriasController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwB0AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-25T03:04:06.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MateriaResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\MateriaResponseDto.cs",
-              "RelativeDocumentMoniker": "Models\\MateriaResponseDto.cs",
-              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\MateriaResponseDto.cs",
-              "RelativeToolTip": "Models\\MateriaResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T05:59:32.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\WeatherForecast.cs",
-              "RelativeToolTip": "WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T04:50:08.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Materia.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\Materia.cs",
               "RelativeDocumentMoniker": "Models\\Materia.cs",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\Materia.cs",
               "RelativeToolTip": "Models\\Materia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T02:56:17.618Z"
+              "WhenOpened": "2026-06-25T02:56:17.618Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "MateriaAlumno.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\MateriaAlumno.cs",
               "RelativeDocumentMoniker": "Models\\MateriaAlumno.cs",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\MateriaAlumno.cs",
               "RelativeToolTip": "Models\\MateriaAlumno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T02:55:47.13Z"
+              "WhenOpened": "2026-06-25T02:55:47.13Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AlumnoesController.cs",
-              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\AlumnoesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AlumnoesController.cs",
-              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\AlumnoesController.cs",
-              "RelativeToolTip": "Controllers\\AlumnoesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T20:17:51.47Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Alumno.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\Alumno.cs",
               "RelativeDocumentMoniker": "Models\\Alumno.cs",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\Alumno.cs",
               "RelativeToolTip": "Models\\Alumno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T19:43:43.958Z"
+              "WhenOpened": "2026-06-24T19:43:43.958Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "AlumnoesController.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\AlumnoesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AlumnoesController.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\AlumnoesController.cs",
+              "RelativeToolTip": "Controllers\\AlumnoesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T20:17:51.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -195,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "ProfesorsController.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\ProfesorsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProfesorsController.cs",
@@ -207,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Profesor.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\Profesor.cs",
               "RelativeDocumentMoniker": "Models\\Profesor.cs",
@@ -219,19 +263,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ColegioDbContext.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\ColegioDbContext.cs",
               "RelativeDocumentMoniker": "ColegioDbContext.cs",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\ColegioDbContext.cs",
               "RelativeToolTip": "ColegioDbContext.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwB0AAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T19:44:39.648Z"
+              "WhenOpened": "2026-06-24T19:44:39.648Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T04:50:08.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MateriaResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\MateriaResponseDto.cs",
+              "RelativeDocumentMoniker": "Models\\MateriaResponseDto.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Models\\MateriaResponseDto.cs",
+              "RelativeToolTip": "Models\\MateriaResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T05:59:32.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Views\\Alumnoes\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Alumnoes\\Create.cshtml",
@@ -243,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Views\\Alumnoes\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Alumnoes\\Delete.cshtml",
@@ -255,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Views\\Alumnoes\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Alumnoes\\Edit.cshtml",
@@ -267,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Views\\Alumnoes\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Alumnoes\\Index.cshtml",
@@ -279,19 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MateriaAlumnoesController.cs",
-              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriaAlumnoesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MateriaAlumnoesController.cs",
-              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Controllers\\MateriaAlumnoesController.cs",
-              "RelativeToolTip": "Controllers\\MateriaAlumnoesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T03:05:13.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "20260625030713_IngresoRestoTablas.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Migrations\\20260625030713_IngresoRestoTablas.cs",
               "RelativeDocumentMoniker": "Migrations\\20260625030713_IngresoRestoTablas.cs",
@@ -303,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "20260624200214_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Migrations\\20260624200214_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20260624200214_InitialCreate.cs",
@@ -315,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -327,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Colegio.csproj",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Colegio.csproj",
               "RelativeDocumentMoniker": "Colegio.csproj",
@@ -339,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Colegio.http",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\Colegio\\Colegio.http",
               "RelativeDocumentMoniker": "Colegio.http",

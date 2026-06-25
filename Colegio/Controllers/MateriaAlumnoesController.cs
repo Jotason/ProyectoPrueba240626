@@ -1,108 +1,94 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Colegio;
 using Colegio.Models;
 
 namespace Colegio.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MateriaAlumnoesController : ControllerBase
+    public class MateriaAlumnoController : ControllerBase
     {
         private readonly ColegioDbContext _context;
 
-        public MateriaAlumnoesController(ColegioDbContext context)
+        public MateriaAlumnoController(ColegioDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/MateriaAlumnoes
+        // GET: api/MateriaAlumno
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<MateriaAlumno>>> GetMateriasAlumnos()
+        public async Task<ActionResult<IEnumerable<AlumnoMateriaDto>>> GetMateriaAlumno()
         {
-            return await _context.MateriasAlumnos.ToListAsync();
-        }
-
-        // GET: api/MateriaAlumnoes/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<MateriaAlumno>> GetMateriaAlumno(int id)
-        {
-            var materiaAlumno = await _context.MateriasAlumnos.FindAsync(id);
-
-            if (materiaAlumno == null)
-            {
-                return NotFound();
-            }
-
-            return materiaAlumno;
-        }
-
-        // PUT: api/MateriaAlumnoes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutMateriaAlumno(int id, MateriaAlumno materiaAlumno)
-        {
-            if (id != materiaAlumno.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(materiaAlumno).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!MateriaAlumnoExists(id))
+            var items = await _context.MateriasAlumnos
+                .Include(am => am.Alumno)
+                .Include(am => am.Materia)
+                .Select(am => new AlumnoMateriaDto
                 {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+                    Id = am.Id,
+                    AlumnoId = am.AlumnoId,
+                    MateriaId = am.MateriaId,
+                    AnioAcademico = am.AnioAcademico,
+                    Calificacion = am.Calificacion,
+                    NombreAlumno = am.Alumno != null ? $"{am.Alumno.Nombre} {am.Alumno.Apellido}" : null,
+                    NombreMateria = am.Materia != null ? am.Materia.Nombre : null
+                })
+                .ToListAsync();
 
-            return NoContent();
+            return Ok(items);
         }
 
-        // POST: api/MateriaAlumnoes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/MateriaAlumno
         [HttpPost]
-        public async Task<ActionResult<MateriaAlumno>> PostMateriaAlumno(MateriaAlumno materiaAlumno)
+        public async Task<ActionResult<AlumnoMateriaDto>> PostAlumnoMateria(AlumnoMateriaDto dto)
         {
-            _context.MateriasAlumnos.Add(materiaAlumno);
+            // Validar calificación en rango
+            if (dto.Calificacion < 0 || dto.Calificacion > 5)
+                return BadRequest("La calificación debe estar entre 0 y 5.");
+
+            // Verificar duplicado
+            var existe = await _context.MateriasAlumnos
+                .AnyAsync(am => am.AlumnoId == dto.AlumnoId &&
+                                am.MateriaId == dto.MateriaId &&
+                                am.AnioAcademico == dto.AnioAcademico);
+            if (existe)
+                return Conflict("El alumno ya tiene esta materia asignada en el mismo año académico.");
+
+            var entity = new MateriaAlumno
+            {
+                AlumnoId = dto.AlumnoId,
+                MateriaId = dto.MateriaId,
+                AnioAcademico = dto.AnioAcademico,
+                Calificacion = dto.Calificacion
+            };
+
+            _context.MateriasAlumnos.Add(entity);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMateriaAlumno", new { id = materiaAlumno.Id }, materiaAlumno);
+            // Devolver el DTO con el ID generado
+            var resultDto = new AlumnoMateriaDto
+            {
+                Id = entity.Id,
+                AlumnoId = entity.AlumnoId,
+                MateriaId = entity.MateriaId,
+                AnioAcademico = entity.AnioAcademico,
+                Calificacion = entity.Calificacion
+            };
+
+            return CreatedAtAction(nameof(GetMateriaAlumno), new { id = entity.Id }, resultDto);
         }
 
-        // DELETE: api/MateriaAlumnoes/5
+        // DELETE: api/MateriaAlumno/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteMateriaAlumno(int id)
+        public async Task<IActionResult> DeleteAlumnoMateria(int id)
         {
-            var materiaAlumno = await _context.MateriasAlumnos.FindAsync(id);
-            if (materiaAlumno == null)
-            {
+            var item = await _context.MateriasAlumnos.FindAsync(id);
+            if (item == null)
                 return NotFound();
-            }
 
-            _context.MateriasAlumnos.Remove(materiaAlumno);
+            _context.MateriasAlumnos.Remove(item);
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
-
-        private bool MateriaAlumnoExists(int id)
-        {
-            return _context.MateriasAlumnos.Any(e => e.Id == id);
         }
     }
 }

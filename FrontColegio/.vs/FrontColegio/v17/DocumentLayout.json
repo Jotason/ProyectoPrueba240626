@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\components\\pages\\materias\\asignarmaterias.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:components\\pages\\materias\\asignarmaterias.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\services\\materiaalumnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:services\\materiaalumnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\models\\materiaalumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:models\\materiaalumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\models\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:models\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\components\\pages\\materias\\editarmateria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:components\\pages\\materias\\editarmateria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\components\\pages\\alumnos\\editaralumno.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:components\\pages\\alumnos\\editaralumno.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\models\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:models\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\models\\profesordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +55,8 @@
       "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:services\\materiaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\components\\pages\\alumnos\\alumnos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:components\\pages\\alumnos\\alumnos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4526E7B8-8027-4A08-9107-50E347CA33C1}|FrontColegio.csproj|c:\\users\\janus\\documents\\github\\proyectoprueba240626\\frontcolegio\\services\\alumnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,24 +114,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "AsignarMaterias.razor",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Materias\\AsignarMaterias.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Materias\\AsignarMaterias.razor",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Materias\\AsignarMaterias.razor",
+              "RelativeToolTip": "Components\\Pages\\Materias\\AsignarMaterias.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T07:53:17.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MateriaAlumnoService.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Services\\MateriaAlumnoService.cs",
+              "RelativeDocumentMoniker": "Services\\MateriaAlumnoService.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Services\\MateriaAlumnoService.cs",
+              "RelativeToolTip": "Services\\MateriaAlumnoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:48:42.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MateriaAlumnoDto.cs",
+              "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Models\\MateriaAlumnoDto.cs",
+              "RelativeDocumentMoniker": "Models\\MateriaAlumnoDto.cs",
+              "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Models\\MateriaAlumnoDto.cs",
+              "RelativeToolTip": "Models\\MateriaAlumnoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T07:36:06.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EditarMateria.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Materias\\EditarMateria.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Materias\\EditarMateria.razor",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Materias\\EditarMateria.razor",
               "RelativeToolTip": "Components\\Pages\\Materias\\EditarMateria.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-25T07:17:57.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "AlumnoService.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Services\\AlumnoService.cs",
               "RelativeDocumentMoniker": "Services\\AlumnoService.cs",
@@ -131,19 +182,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T20:34:40.098Z"
+              "WhenOpened": "2026-06-24T20:34:40.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Alumnos.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Alumnos\\Alumnos.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Alumnos\\Alumnos.razor",
@@ -155,19 +207,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Layout\\NavMenu.razor",
               "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC8AAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-24T21:15:16.329Z"
+              "WhenOpened": "2026-06-24T21:15:16.329Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "CrearMateria.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Materias\\CrearMateria.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Materias\\CrearMateria.razor",
@@ -179,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "ProfesorService.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Services\\ProfesorService.cs",
               "RelativeDocumentMoniker": "Services\\ProfesorService.cs",
@@ -191,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Materias.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Materias\\Materias.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Materias\\Materias.razor",
@@ -199,24 +252,24 @@
               "RelativeToolTip": "Components\\Pages\\Materias\\Materias.razor",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAC4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-25T05:32:21.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T05:32:21.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MateriaDto.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Models\\MateriaDto.cs",
               "RelativeDocumentMoniker": "Models\\MateriaDto.cs",
               "ToolTip": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Models\\MateriaDto.cs",
               "RelativeToolTip": "Models\\MateriaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T05:29:57.891Z"
+              "WhenOpened": "2026-06-25T05:29:57.891Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "EditarAlumno.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Alumnos\\EditarAlumno.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Alumnos\\EditarAlumno.razor",
@@ -224,12 +277,11 @@
               "RelativeToolTip": "Components\\Pages\\Alumnos\\EditarAlumno.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-24T21:13:57.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T21:13:57.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "CrearAlumno.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Alumnos\\CrearAlumno.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Alumnos\\CrearAlumno.razor",
@@ -241,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "ProfesorDto.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Models\\ProfesorDto.cs",
               "RelativeDocumentMoniker": "Models\\ProfesorDto.cs",
@@ -253,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "CrearProfesor.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Profesor\\CrearProfesor.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Profesor\\CrearProfesor.razor",
@@ -265,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "EditarProfesor.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Profesor\\EditarProfesor.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Profesor\\EditarProfesor.razor",
@@ -277,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "MateriaService.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Services\\MateriaService.cs",
               "RelativeDocumentMoniker": "Services\\MateriaService.cs",
@@ -289,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Profesor.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Profesor\\Profesor.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Profesor\\Profesor.razor",
@@ -301,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
@@ -313,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "Components\\Routes.razor",
@@ -325,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "AlumnoDto.cs",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Models\\AlumnoDto.cs",
               "RelativeDocumentMoniker": "Models\\AlumnoDto.cs",
@@ -337,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\App.razor",
               "RelativeDocumentMoniker": "Components\\App.razor",
@@ -349,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Counter.razor",
@@ -361,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "Components\\_Imports.razor",
@@ -373,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\janus\\Documents\\GitHub\\ProyectoPrueba240626\\FrontColegio\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",

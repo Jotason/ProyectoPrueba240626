@@ -1,5 +1,6 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Colegio.Models
 {
     public class MateriaAlumno
@@ -7,19 +8,18 @@ namespace Colegio.Models
         [Key]
         public int Id { get; set; }
 
+        public int AlumnoId { get; set; }
+        [ForeignKey(nameof(AlumnoId))]
+        public Alumno? Alumno { get; set; }
+
+        public int MateriaId { get; set; }
+        [ForeignKey(nameof(MateriaId))]
+        public Materia? Materia { get; set; }
+
         [Required]
         public int AnioAcademico { get; set; }
 
-        [Required]
-        public int AlumnoId { get; set; }
-        public Alumno? Alumno { get; set; }
-
-        [Required]
-        public int MateriaId { get; set; }
-        public Materia? Materia { get; set; }
-
-
-        [Range(0.0, 5.0)]
-        public decimal CalificacionFinal { get; set; }
+        [Range(0, 5, ErrorMessage = "La calificación debe estar entre 0 y 5.")]
+        public decimal Calificacion { get; set; }
     }
 }
