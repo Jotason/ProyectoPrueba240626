@@ -17,7 +17,7 @@ namespace Colegio
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Restricción: Un alumno no puede repetir materia el mismo año académico 
+            // Un alumno no puede repetir materia el mismo año académico 
             // Índice único para evitar duplicados (mismo alumno, misma materia, mismo año)
             modelBuilder.Entity<MateriaAlumno>()
                 .HasIndex(am => new { am.AlumnoId, am.MateriaId, am.AnioAcademico })
@@ -27,12 +27,12 @@ namespace Colegio
             // Restricción de borrado en cascada: si se elimina un alumno, no se permite si tiene registros
             modelBuilder.Entity<MateriaAlumno>()
                 .HasOne(am => am.Alumno)
-                .WithMany(a => a.MateriaAlumnos)  // Debes agregar la colección en Alumno
+                .WithMany(a => a.MateriaAlumnos)  
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<MateriaAlumno>()
                 .HasOne(am => am.Materia)
-                .WithMany(m => m.MateriaAlumnos)  // Debes agregar la colección en Materia
+                .WithMany(m => m.MateriaAlumnos)  
                 .OnDelete(DeleteBehavior.Restrict);
             modelBuilder.Entity<Materia>()
 

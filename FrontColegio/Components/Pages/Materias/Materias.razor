@@ -47,12 +47,31 @@ else
     </table>
 }
 
+@if (!string.IsNullOrEmpty(mensajeError))
+{
+    <div class="alert alert-danger">@mensajeError</div>
+}
+
 @code {
     private List<MateriaDto>? materias;
+    private string? mensajeError;
 
     protected override async Task OnInitializedAsync()
     {
         materias = await MateriaService.GetMateriasAsync();
+    }
+
+    private async Task CargarMaterias()
+    {
+        try
+        {
+            materias = await MateriaService.GetMateriasAsync();
+            mensajeError = null;
+        }
+        catch (Exception ex)
+        {
+            mensajeError = $"Error al cargar materias: {ex.Message}";
+        }
     }
 
 
@@ -61,6 +80,25 @@ else
 
     private async Task Eliminar(int id)
     {
-        // Confirmación y eliminación
+        var confirmado = await JsRuntime.InvokeAsync<bool>("confirm", "¿Está seguro de eliminar esta materia?");
+        if (confirmado)
+        {
+            try
+            {
+                var response = await MateriaService.DeleteMateriaAsync(id);
+                if (response.IsSuccessStatusCode)
+                {
+                    await CargarMaterias();
+                }
+                else
+                {
+                    mensajeError = "Error al eliminar la materia.";
+                }
+            }
+            catch (Exception ex)
+            {
+                mensajeError = $"Error: {ex.Message}";
+            }
+        }
     }
 }
